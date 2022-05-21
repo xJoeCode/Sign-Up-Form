@@ -1,11 +1,46 @@
 .coffeeImage {
 width: 800px;
-height: auto;
-margin: 0;
-gap: 0;
+height: 1100px;
 position: relative;
+object-fit: cover;
+overflow: hidden;
+}
+
+.coffeeLogo{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: transparent;
+    border-radius: 500px;
+    left: 100px;
+    top: 160px;
+    box-shadow: 20px 30px 40px;
+    
+}
+
+.leftSide{
+    position: relative;
+}
+
+.leftSide h1{
+    position: absolute;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 20px 30px 40px black;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    width: 100px;
+    color: rgb(255, 195, 172);
+    top: 160px;
+    left: 350px;
+    z-index: 2;
+}
+
+.leftSide h1:hover{
+    color: brown;
+    cursor: pointer;
 }
 
 body{
     margin: 0;
+    background-color: black;
 }
