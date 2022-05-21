@@ -1,0 +1,11 @@
+.coffeeImage {
+width: 800px;
+height: auto;
+margin: 0;
+gap: 0;
+position: relative;
+}
+
+body{
+    margin: 0;
+}
