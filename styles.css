@@ -1,9 +1,10 @@
 .coffeeImage {
 width: 800px;
-height: 1100px;
-position: relative;
+height: auto;
+position: fixed;
 object-fit: cover;
 overflow: hidden;
+z-index: 0;
 }
 
 .coffeeLogo{
@@ -13,24 +14,25 @@ overflow: hidden;
     background-color: transparent;
     border-radius: 500px;
     left: 100px;
-    top: 160px;
+    top: 140px;
     box-shadow: 20px 30px 40px;
+    z-index: 2;
     
 }
 
 .leftSide{
     position: relative;
+    width: 800px
 }
 
-.leftSide h1{
+.leftSide>h1{
     position: absolute;
     font-family: 'Luckiest Guy', cursive;
     text-shadow: 20px 30px 40px black;
     letter-spacing: 0.2rem;
     font-size: 3rem;
-    width: 100px;
     color: rgb(255, 195, 172);
-    top: 160px;
+    top: 150px;
     left: 350px;
     z-index: 2;
 }
@@ -38,6 +40,16 @@ overflow: hidden;
 .leftSide h1:hover{
     color: brown;
     cursor: pointer;
+}
+
+.leftSide .overlay{
+    width: inherit;
+    height: 280px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
+    top: 100px;
+    position: relative;
 }
 
 body{
