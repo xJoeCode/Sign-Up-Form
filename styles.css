@@ -54,6 +54,11 @@
     position: relative;
 }
 
+.rightSide{
+    height: auto;
+    position: relative;
+}
+
 .rightSide> p{
     position: relative;
     left: 1000px;
@@ -70,17 +75,30 @@
 
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin: 5px;
-    right: 400px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+    left: 1000px;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(255, 194, 71);
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    position: relative;
+    bottom: 8px;
+    margin: 5px;
+
 }
 
 .rightSide ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
 }
 
 body{
