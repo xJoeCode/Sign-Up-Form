@@ -9,11 +9,11 @@
 
 .coffeeLogo{
     position: absolute;
-    width: 180px;
+    width: 120px;
     height: auto;
     background-color: transparent;
     border-radius: 500px;
-    left: 150px;
+    left: 200px;
     top: 140px;
     box-shadow: 20px 30px 40px;
     z-index: 2;
@@ -46,7 +46,7 @@
 
 .leftSide .overlay{
     width: inherit;
-    height: 280px;
+    height: 240px;
     background-color: rgb(0, 0, 0);
     opacity: 0.6;
     z-index: 1;
@@ -68,37 +68,41 @@
     font-size: 2rem;
     letter-spacing: 0.2rem;
     width: 800px;
-    height: 200px;
+    height: auto;
 }
 
 .rightSide li{
 
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 10px;
+    flex-direction: column;
+    margin: 5px;
     left: 1000px;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(255, 194, 71);
 }
 
 input{
     appearance: none;
     -webkit-appearance: none;
-    height: 20px;
+    height: 30px;
     position: relative;
-    bottom: 8px;
+    bottom: 5px;
+    right:5px;
     margin: 5px;
+    box-sizing: border-box;
 
 }
 
 .rightSide ul {
+    position: relative;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    justify-content:space-between;
+    width: 420px;
+    z-index: 3;
 }
 
 body{
