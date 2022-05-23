@@ -15,10 +15,12 @@
 
         passwords = document.getElementById("password")
         confirmPasswords = document.getElementById("confirmPassword")
-        if (passwords.value !== confirmPasswords.value){
-            confirmPasswords.setCustomValidity("Password does not match")
+        if (passwords.value != confirmPasswords.value){
+            confirmPasswords.setCustomValidity("Passwords do not match")
+            passwords.setCustomValidity("Passwords do not match")
         } else {
             confirmPasswords.setCustomValidity("")
+            passwords.setCustomValidity("")
         }
     }
         
@@ -36,30 +38,30 @@
     <div class="rightSide">
         <p> Welcome to Roastie Coffee. We are a coffee subscription service. Sign up for our newsletter for updates on new beans.
         </p>
-        <form action="post">
+        <form action="get">
         <ul>
             <li>
                 <label for="firstName">First Name:</label>
-                <input type="text" id="name" name="firstName">
+                <input type="text" id="name" name="firstName" required>
             </li>
             <li>
                 <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" id="lastName">
+                <input type="text" name="lastName" id="lastName" required>
             </li>
             <li>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </li>
             <li>
                 <label for="phoneNumber">Phone Number:</label>
-                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="+65">
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+65" pattern= "\+65(6|8|9)\d{7}" required>
             </li>
             <li>
-                <label for="password">Password*:</label>
-                <input type="password" name="password" id="password" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" onchange="validatePassword()" required>
             </li>
             <li>
-                <label for="confirmPassword">Confirm Password*:</label>
+                <label for="confirmPassword">Confirm Password:</label>
                 <input type="password" name="confirmPassword" id="confirmPassword" onchange="validatePassword()"  required>
             </li>
             <li>
