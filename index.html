@@ -9,6 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script defer>
+
+        function validatePassword(){
+
+        passwords = document.getElementById("password")
+        confirmPasswords = document.getElementById("confirmPassword")
+        if (passwords.value !== confirmPasswords.value){
+            confirmPasswords.setCustomValidity("Password does not match")
+        } else {
+            confirmPasswords.setCustomValidity("")
+        }
+    }
+        
+        
+    
+    </script>
 </head>
 <body>
     <div class="leftSide">
@@ -39,12 +55,17 @@
                 <input type="number" name="phoneNumber" id="phoneNumber" placeholder="+65">
             </li>
             <li>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
+                <label for="password">Password*:</label>
+                <input type="password" name="password" id="password" required>
             </li>
             <li>
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" name="confirmPassword" id="confirmPassword">
+                <label for="confirmPassword">Confirm Password*:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" onchange="validatePassword()"  required>
+            </li>
+            <li>
+                <button type="submit">
+                    Create Account
+                </button>
             </li>
         </ul>
     </form>

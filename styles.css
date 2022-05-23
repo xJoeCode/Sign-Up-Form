@@ -32,7 +32,7 @@
     text-shadow: 20px 30px 40px black;
     letter-spacing: 0.2rem;
     font-size: 3rem;
-    color: rgb(255, 195, 172);
+    color: rgb(255, 194, 71);
     top: 160px;
     left: 350px;
     text-align: center;
@@ -91,8 +91,21 @@ input{
     bottom: 5px;
     right:5px;
     margin: 5px;
+    border-radius: 5px;
     box-sizing: border-box;
+    transition: 0.2s;
+    -webkit-transition: 0.5s;
+    outline: none;
 
+}
+
+input:focus{
+    border: 4px solid rgb(252, 208, 62);
+    box-shadow: 5px 5px 10px 0px rgba(255, 255, 255, 0.315);
+}
+
+input:invalid:focus{
+    border: 4px solid rgb(252, 68, 62); 
 }
 
 .rightSide ul {
@@ -103,6 +116,17 @@ input{
     justify-content:space-between;
     width: 420px;
     z-index: 3;
+}
+
+.rightSide button{
+    background-color: rgb(252, 208, 62);
+    border-radius: 50px;
+    height: 60px;
+    width: 220px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 body{
