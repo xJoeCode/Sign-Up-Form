@@ -22,10 +22,7 @@
             confirmPasswords.setCustomValidity("")
             passwords.setCustomValidity("")
         }
-    }
-        
-        
-    
+    }       
     </script>
 </head>
 <body>
@@ -36,7 +33,7 @@
         <div class="overlay"></div>
     </div>
     <div class="rightSide">
-        <p> Welcome to Roastie Coffee. We are a coffee subscription service. Sign up for our newsletter for updates on new beans.
+        <p> Welcome to Roastie Coffee. We are a coffee roastery based in Singapore. Create an account to place an order and subscribe for new updates and upcoming events.
         </p>
         <form action="get">
         <ul>
@@ -57,17 +54,24 @@
                 <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+65" pattern= "\+65(6|8|9)\d{7}" required>
             </li>
             <li>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" onchange="validatePassword()" required>
+                <label for="password">Password: (min 8 char)</label>
+                <input type="password" name="password" id="password" minlength="8" onchange="validatePassword()" required>
             </li>
             <li>
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" onchange="validatePassword()"  required>
+                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" onchange="validatePassword()"  required>
+            </li>
+            <li>
+                <label for="subscribtion">Subscribe to newsletter</label>
+                <input type="checkbox" name="subscription" id="subscribtion">
             </li>
             <li>
                 <button type="submit">
-                    Create Account
+                    <span>Create Account</span> 
                 </button>
+            </li>
+            <li>
+                <p>Already have an account? <a href="./image.jpg"> Log in</a></p>
             </li>
         </ul>
     </form>
