@@ -311,15 +311,15 @@
             </li>
             <li>
                 <label for="zipcode">ZIP Code:</label>
-                <input type="text" name="zipCode" id="zipCode" pattern="[0-9]{6}" onchange=" return validateZIP()" required>
+                <input type="text" name="zipCode" id="zipCode" pattern="[0-9]{6}" onChange=" validateZIP()" required>
             </li>
             <li>
                 <label for="password">Password: (min 8 char)</label>
-                <input type="password" name="password" id="password" minlength="8" onchange="return validatePassword()" required>
+                <input type="password" name="password" id="password" minlength="8" onChange=" validatePassword()" required>
             </li>
             <li>
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" onchange="return validatePassword()"  required>
+                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" onChange=" validatePassword()"  required>
             </li>
             <li>
                 <label for="subscribtion">Subscribe to newsletter</label>
