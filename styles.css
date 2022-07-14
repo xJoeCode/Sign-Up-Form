@@ -87,7 +87,7 @@
     color: var(--main-color);
 }
 
-input[type="email"],[type="password"],[type="text"],[type="tel"] {
+input[type="email"],[type="password"],[type="text"],[type="tel"],select {
     appearance: none;
     -webkit-appearance: none;
     font-family: sans-serif;
@@ -99,7 +99,7 @@ input[type="email"],[type="password"],[type="text"],[type="tel"] {
     border-radius: 5px;
     box-sizing: border-box;
     transition: 0.2s;
-    -webkit-transition: 0.5s;
+    -webkit-transition: 0.2s;
     outline: none;
 }
 
